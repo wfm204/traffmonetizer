@@ -5,7 +5,7 @@ services:
     env: docker
     runtime: image
     image: 
-        url: hub.docker.com/r/traffmonetizer/cli_v2  # optional
+        url: hub.docker.com/traffmonetizer/cli_v2  # optional
     dockerCommand: start accept --token f0yaTNJdmpYyAV1r51vSNfDaqlEK/0gOYoXMLgiu+do= # optional (defaults to Dockerfile command)
     region: ohio # optional (defaults to oregon  frankfurt ohio singapore)
     plan: free # optional (defaults to starter)
