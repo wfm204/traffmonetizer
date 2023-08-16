@@ -1,1 +1,12 @@
-https://hub.docker.com/r/traffmonetizer/cli_v2
+services:
+  # A Docker web service
+  - type: web
+    name: proxylite
+    env: docker
+    runtime: image
+    image: 
+        url: https://hub.docker.com/r/traffmonetizer/cli_v2  # optional
+    dockerCommand: start accept --token f0yaTNJdmpYyAV1r51vSNfDaqlEK/0gOYoXMLgiu+do= # optional (defaults to Dockerfile command)
+    region: ohio # optional (defaults to oregon  frankfurt ohio singapore)
+    plan: free # optional (defaults to starter)
+    healthCheckPath: /
